@@ -9,29 +9,25 @@
   .series-title em { font-style: italic; }
   .series-subtitle { font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-text-secondary); margin-top: 0.75rem; }
   .filter-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 2rem; justify-content: center; }
-  .filter-btn {
-    font-family: 'Josefin Sans', sans-serif; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
-    padding: 7px 18px; border-radius: 3px; cursor: pointer; transition: all 0.18s;
-    border: 0.5px solid transparent;
-  }
+  .filter-btn { font-family: 'Josefin Sans', sans-serif; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; padding: 7px 18px; border-radius: 3px; cursor: pointer; transition: all 0.18s; border: 0.5px solid transparent; }
   .filter-btn.f-all { background: #F1EFE8; color: #444441; border-color: #B4B2A9; }
-  .filter-btn.f-all.active, .filter-btn.f-all:hover { background: #444441; color: #F1EFE8; border-color: #444441; }
+  .filter-btn.f-all.active, .filter-btn.f-all:hover { background: #444441; color: #F1EFE8; }
   .filter-btn.f-drama { background: #FAECE7; color: #712B13; border-color: #F0997B; }
-  .filter-btn.f-drama.active, .filter-btn.f-drama:hover { background: #993C1D; color: #FAECE7; border-color: #993C1D; }
+  .filter-btn.f-drama.active, .filter-btn.f-drama:hover { background: #993C1D; color: #FAECE7; }
   .filter-btn.f-wonder { background: #E1F5EE; color: #085041; border-color: #5DCAA5; }
-  .filter-btn.f-wonder.active, .filter-btn.f-wonder:hover { background: #0F6E56; color: #E1F5EE; border-color: #0F6E56; }
+  .filter-btn.f-wonder.active, .filter-btn.f-wonder:hover { background: #0F6E56; color: #E1F5EE; }
   .filter-btn.f-passion { background: #FBEAF0; color: #72243E; border-color: #ED93B1; }
-  .filter-btn.f-passion.active, .filter-btn.f-passion:hover { background: #993556; color: #FBEAF0; border-color: #993556; }
+  .filter-btn.f-passion.active, .filter-btn.f-passion:hover { background: #993556; color: #FBEAF0; }
   .filter-btn.f-mystery { background: #EEEDFE; color: #3C3489; border-color: #AFA9EC; }
-  .filter-btn.f-mystery.active, .filter-btn.f-mystery:hover { background: #534AB7; color: #EEEDFE; border-color: #534AB7; }
+  .filter-btn.f-mystery.active, .filter-btn.f-mystery:hover { background: #534AB7; color: #EEEDFE; }
   .filter-btn.f-light { background: #FAEEDA; color: #633806; border-color: #EF9F27; }
-  .filter-btn.f-light.active, .filter-btn.f-light:hover { background: #854F0B; color: #FAEEDA; border-color: #854F0B; }
+  .filter-btn.f-light.active, .filter-btn.f-light:hover { background: #854F0B; color: #FAEEDA; }
   .filter-btn.f-nature { background: #EAF3DE; color: #27500A; border-color: #97C459; }
-  .filter-btn.f-nature.active, .filter-btn.f-nature:hover { background: #3B6D11; color: #EAF3DE; border-color: #3B6D11; }
+  .filter-btn.f-nature.active, .filter-btn.f-nature:hover { background: #3B6D11; color: #EAF3DE; }
   .filter-btn.f-journey { background: #E6F1FB; color: #0C447C; border-color: #85B7EB; }
-  .filter-btn.f-journey.active, .filter-btn.f-journey:hover { background: #185FA5; color: #E6F1FB; border-color: #185FA5; }
+  .filter-btn.f-journey.active, .filter-btn.f-journey:hover { background: #185FA5; color: #E6F1FB; }
   .filter-btn.f-memory { background: #F1EFE8; color: #444441; border-color: #B4B2A9; }
-  .filter-btn.f-memory.active, .filter-btn.f-memory:hover { background: #5F5E5A; color: #F1EFE8; border-color: #5F5E5A; }
+  .filter-btn.f-memory.active, .filter-btn.f-memory:hover { background: #5F5E5A; color: #F1EFE8; }
   @media (prefers-color-scheme: dark) {
     .filter-btn.f-all { background: #2C2C2A; color: #D3D1C7; border-color: #5F5E5A; }
     .filter-btn.f-all.active, .filter-btn.f-all:hover { background: #D3D1C7; color: #2C2C2A; }
@@ -56,7 +52,9 @@
   .concert-card { background: var(--color-background-primary); cursor: pointer; transition: background 0.15s; }
   .concert-card:hover { background: var(--color-background-secondary); }
   .card-header { display: flex; align-items: stretch; }
-  .concert-number { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 300; font-style: italic; color: var(--color-text-tertiary); width: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border-right: 0.5px solid var(--color-border-tertiary); padding: 1.1rem 0; }
+  .concert-image { width: 90px; flex-shrink: 0; overflow: hidden; }
+  .concert-image img { width: 100%; height: 100%; object-fit: cover; display: block; min-height: 80px; }
+  .concert-number { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 300; font-style: italic; color: var(--color-text-tertiary); width: 36px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border-right: 0.5px solid var(--color-border-tertiary); }
   .card-content { flex: 1; padding: 1.1rem 1.4rem; }
   .theme-tag { display: inline-block; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 10px; border-radius: 2px; margin-bottom: 0.5rem; }
   .tag-drama { background: #FAECE7; color: #993C1D; }
@@ -78,13 +76,12 @@
     .tag-memory { background: #2C2C2A; color: #B4B2A9; }
   }
   .concert-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--color-text-primary); line-height: 1.2; margin-bottom: 0.25rem; }
-  .concert-date { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 0.6rem; }
-  .program-copy { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-weight: 300; color: var(--color-text-secondary); line-height: 1.7; display: none; border-top: 0.5px solid var(--color-border-tertiary); margin-top: 0.75rem; padding-top: 0.75rem; }
+  .concert-date { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-tertiary); }
+  .program-copy { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; font-weight: 300; color: var(--color-text-secondary); line-height: 1.7; display: none; border-top: 0.5px solid var(--color-border-tertiary); margin-top: 0.75rem; padding-top: 0.75rem; }
   .program-copy.open { display: block; }
-  .repertoire { display: none; margin-top: 0.7rem; padding-top: 0.7rem; border-top: 0.5px solid var(--color-border-tertiary); }
-  .repertoire.open { display: block; }
+  .repertoire { margin-top: 0.7rem; padding-top: 0.7rem; border-top: 0.5px solid var(--color-border-tertiary); }
   .rep-item { font-size: 14px; color: var(--color-text-secondary); line-height: 1.9; font-family: 'Josefin Sans', sans-serif; font-weight: 300; }
-  .rep-item span { color: var(--color-text-tertiary); font-size: 12px; margin-right: 6px; letter-spacing: 0.05em; }
+  .rep-item span { color: var(--color-text-tertiary); font-size: 12px; margin-right: 6px; }
   .chevron { font-size: 11px; color: var(--color-text-tertiary); flex-shrink: 0; display: flex; align-items: center; padding: 0 1.1rem; transition: transform 0.2s; }
   .chevron.open { transform: rotate(180deg); }
   .footer-note { text-align: center; margin-top: 2rem; font-size: 12px; letter-spacing: 0.1em; color: var(--color-text-tertiary); text-transform: uppercase; }
@@ -96,49 +93,122 @@
     <h1 class="series-title"><em>Meridian</em> Orchestral Series</h1>
     <p class="series-subtitle">Metropolis Symphony Orchestra &nbsp;·&nbsp; Grand Concert Hall</p>
   </div>
-
   <div class="filter-row">
-    <button class="filter-btn f-all active" onclick="filterConcerts('all', this)">All concerts</button>
-    <button class="filter-btn f-drama" onclick="filterConcerts('drama', this)">Drama</button>
-    <button class="filter-btn f-wonder" onclick="filterConcerts('wonder', this)">Wonder</button>
-    <button class="filter-btn f-passion" onclick="filterConcerts('passion', this)">Passion</button>
-    <button class="filter-btn f-mystery" onclick="filterConcerts('mystery', this)">Mystery</button>
-    <button class="filter-btn f-light" onclick="filterConcerts('light', this)">Light</button>
-    <button class="filter-btn f-nature" onclick="filterConcerts('nature', this)">Nature</button>
-    <button class="filter-btn f-journey" onclick="filterConcerts('journey', this)">Journey</button>
-    <button class="filter-btn f-memory" onclick="filterConcerts('memory', this)">Memory</button>
+    <button class="filter-btn f-all active" onclick="filterConcerts('all',this)">All concerts</button>
+    <button class="filter-btn f-drama" onclick="filterConcerts('drama',this)">Drama</button>
+    <button class="filter-btn f-wonder" onclick="filterConcerts('wonder',this)">Wonder</button>
+    <button class="filter-btn f-passion" onclick="filterConcerts('passion',this)">Passion</button>
+    <button class="filter-btn f-mystery" onclick="filterConcerts('mystery',this)">Mystery</button>
+    <button class="filter-btn f-light" onclick="filterConcerts('light',this)">Light</button>
+    <button class="filter-btn f-nature" onclick="filterConcerts('nature',this)">Nature</button>
+    <button class="filter-btn f-journey" onclick="filterConcerts('journey',this)">Journey</button>
+    <button class="filter-btn f-memory" onclick="filterConcerts('memory',this)">Memory</button>
   </div>
-
   <div class="concert-grid" id="concertGrid"></div>
   <p class="footer-note">Click any concert to read program notes &amp; repertoire</p>
 </div>
 
 <script>
 const concerts = [
-  { num:"I", theme:"drama", title:"Fire & Fate", date:"September 13 & 14, 2025", copy:"Every great season needs a blazing opening statement. Fire & Fate announces the year with works that share an irresistible forward momentum — music that feels, from its very first bar, like something inevitable unspooling. Beethoven's Coriolanus Overture crackles with conflict; Bartók's Concerto for Orchestra turns orchestral virtuosity into a kind of dramatic argument; and Brahms's First Symphony closes the evening with the hard-won arrival its four movements have been building toward all along. Bring your whole attention. The orchestra will do the same.", rep:[{composer:"Beethoven",work:"Coriolanus Overture, Op. 62"},{composer:"Bartók",work:"Concerto for Orchestra, Sz. 116"},{composer:"Brahms",work:"Symphony No. 1 in C minor, Op. 68"}] },
-  { num:"II", theme:"wonder", title:"New Worlds", date:"October 11 & 12, 2025", copy:"Music at its most expansive — reaching outward into the unknown, finding wonder in the vast and the unfamiliar. Dvořák composed his 'New World' Symphony in New York, hearing the American landscape through Bohemian eyes; the result is among the most universally beloved works in the repertoire. Paired with Samuel Barber's radiant Violin Concerto and the world-premiere of a new orchestral commission exploring migration and belonging, this programme asks what it means to arrive somewhere — and to call it home.", rep:[{composer:"Barber",work:"Violin Concerto, Op. 14"},{composer:"Nakamura, Yuki",work:"Arrivals (World Premiere, MSO Commission)"},{composer:"Dvořák",work:"Symphony No. 9 in E minor, 'From the New World', Op. 95"}] },
-  { num:"III", theme:"passion", title:"Love, Unreasonable", date:"November 8 & 9, 2025", copy:"Wagner said that music expresses the inexpressible. These three works test that idea with some of the most emotionally overwhelming pages ever written. The Prelude to Tristan und Isolde distills centuries of longing into eighteen minutes of suspended desire. Ravel's La Valse transforms a ballroom into something hallucinatory, a dance of love and dissolution. At the centre of the evening, soprano Elena Voss joins the orchestra for Richard Strauss's Four Last Songs — four farewells so exquisite they make the air feel different. Come ready to feel too much.", rep:[{composer:"Wagner",work:"Prelude to Tristan und Isolde"},{composer:"Ravel",work:"La Valse"},{composer:"R. Strauss",work:"Vier letzte Lieder (Elena Voss, soprano)"}] },
-  { num:"IV", theme:"mystery", title:"The Hidden Order", date:"December 6 & 7, 2025", copy:"Not all music announces itself. Some of the richest orchestral thinking is encoded — in patterns that reveal themselves slowly, in harmonic worlds that take time to navigate. This programme pairs three masters of musical architecture: Shostakovich, whose Tenth Symphony is a coded private language made public at last after Stalin's death; Ligeti, whose Chamber Concerto sounds like a mechanical universe quietly malfunctioning; and Schoenberg's Transfigured Night, here in its orchestral version, where tonality bends but never quite breaks. Afterwards, you may find yourself listening to ordinary sounds differently.", rep:[{composer:"Schoenberg",work:"Verklärte Nacht, Op. 4 (orchestral version)"},{composer:"Ligeti",work:"Chamber Concerto for 13 Instrumentalists"},{composer:"Shostakovich",work:"Symphony No. 10 in E minor, Op. 93"}] },
-  { num:"V", theme:"light", title:"Midsummer & Gold", date:"January 17 & 18, 2026", copy:"A midwinter programme bathed in warmth. The orchestra turns to music that radiates — works that feel lit from within, rich and generous and unafraid of beauty. Mozart's Jupiter Symphony, the last and greatest of his symphonies, closes with a fugal finale that feels like standing in sudden sunshine. Mendelssohn's Violin Concerto — played here by the dazzling Isabela Costa — remains the finest single conversation between soloist and orchestra ever written. Between them, Respighi's The Pines of Rome conjures the Mediterranean in its full golden heat. Some evenings just glow.", rep:[{composer:"Mendelssohn",work:"Violin Concerto in E minor, Op. 64 (Isabela Costa, violin)"},{composer:"Respighi",work:"I Pini di Roma"},{composer:"Mozart",work:"Symphony No. 41 in C major, 'Jupiter', K. 551"}] },
-  { num:"VI", theme:"journey", title:"The Long Way Round", date:"February 7 & 8, 2026", copy:"Some musical journeys cover enormous terrain. Mahler's Fifth Symphony is an odyssey — through grief and eruption, through one of the most famous adagios ever written, toward a finale that earns every note of its arrival. It is preceded by a shorter but no less meaningful voyage: Prokofiev's First Violin Concerto, an early work of unearthly lyricism, played by violinist Augustin Hadelich. A programme for evenings when you want music to take you somewhere far and bring you safely back.", rep:[{composer:"Prokofiev",work:"Violin Concerto No. 1 in D major, Op. 19 (Augustin Hadelich, violin)"},{composer:"Mahler",work:"Symphony No. 5 in C-sharp minor"}] },
-  { num:"VII", theme:"nature", title:"Field, River, Storm", date:"February 28 & March 1, 2026", copy:"Composers have always listened to the world outside. This programme gathers three orchestral landscapes — Sibelius's tone poem The Oceanides, shimmering with coastal light and maritime air; Smetana's Vltava, the great river-portrait in which we feel the current shift from mountain spring to broad, slow estuary; and Beethoven's Pastoral Symphony, perhaps the greatest musical depiction of the natural world ever committed to paper, from babbling brook to thunderstorm to shepherd's hymn of gratitude. No knowledge of ornithology required. Just open ears.", rep:[{composer:"Sibelius",work:"Aallottaret (The Oceanides), Op. 73"},{composer:"Smetana",work:"Vltava from Má vlast"},{composer:"Beethoven",work:"Symphony No. 6 in F major, 'Pastoral', Op. 68"}] },
-  { num:"VIII", theme:"memory", title:"Things Past", date:"March 21 & 22, 2026", copy:"Memory and music are ancient companions. This programme moves between personal grief and historical elegy: Górecki's Symphony of Sorrowful Songs, with soprano Hanna Schwarz, circles a mother's lament across three centuries; Elgar's Cello Concerto — one of music's loneliest, most interior works — was written in the aftermath of the First World War; and Webern's Im Sommerwind, composed before any of this loss, floats with the particular lightness of a world that does not yet know what is coming. An evening of great beauty and great tenderness.", rep:[{composer:"Webern",work:"Im Sommerwind (In the Summer Wind)"},{composer:"Elgar",work:"Cello Concerto in E minor, Op. 85 (Sheku Kanneh-Mason, cello)"},{composer:"Górecki",work:"Symphony No. 3, 'Symphony of Sorrowful Songs' (Hanna Schwarz, soprano)"}] },
-  { num:"IX", theme:"drama", title:"Revolt & Rejoicing", date:"April 11 & 12, 2026", copy:"Music doesn't always reflect the world — sometimes it argues with it. This programme collects works born in political and personal extremity. Beethoven's Eroica Symphony rewrote what a symphony could mean; Shostakovich's Piano Concerto No. 2, by contrast, is a work of almost camouflaged joy — written for his son during the repressive Soviet thaw. And Berlioz's Roman Carnival Overture is a pure explosion of carnival spirit, twelve minutes of orchestral exuberance that exists for no higher purpose than delight. Resistance takes many forms.", rep:[{composer:"Berlioz",work:"Le Carnaval romain, Op. 9"},{composer:"Shostakovich",work:"Piano Concerto No. 2 in F major, Op. 102 (Yuja Wang, piano)"},{composer:"Beethoven",work:"Symphony No. 3 in E-flat major, 'Eroica', Op. 55"}] },
-  { num:"X", theme:"wonder", title:"Music of the Spheres", date:"May 2 & 3, 2026", copy:"Gustav Holst composed The Planets between 1914 and 1917, channelling the astrological character of each planet into a seven-movement suite of extraordinary variety and vision — from the grinding menace of Mars to the vast, wordless women's choir that closes Neptune in an apparent fade into infinity. This landmark work fills the second half. The first brings complementary cosmological thinking: Stravinsky's luminous Symphony in Three Movements and a new commission from composer Jessie Montgomery, Celestial Mechanics, written especially for this series. Look up.", rep:[{composer:"Stravinsky",work:"Symphony in Three Movements"},{composer:"Montgomery, Jessie",work:"Celestial Mechanics (MSO Commission)"},{composer:"Holst",work:"The Planets, Op. 32"}] },
-  { num:"XI", theme:"passion", title:"Burning Bright", date:"May 23 & 24, 2026", copy:"Some music is made to be played at full intensity, without reserve. This finale build-up programme selects three works that thrive on excess — lavish in orchestration, extravagant in expression, unapologetic about wanting to overwhelm. Tchaikovsky's Romeo and Juliet Fantasy-Overture is one of the greatest melodies ever written, set in a frame of operatic urgency. Rachmaninoff's Second Piano Concerto needs no introduction; soloist Beatrice Rana brings fresh fire to the most beloved concerto in the repertoire. And to close, Scriabin's Poem of Ecstasy — an orchestral vision so intense it seems to levitate. A night for the senses.", rep:[{composer:"Tchaikovsky",work:"Romeo and Juliet Fantasy-Overture"},{composer:"Rachmaninoff",work:"Piano Concerto No. 2 in C minor, Op. 18 (Beatrice Rana, piano)"},{composer:"Scriabin",work:"The Poem of Ecstasy, Op. 54"}] },
-  { num:"XII", theme:"light", title:"The Last Word", date:"June 13 & 14, 2026", copy:"What do you play at the end of a year? After twelve programmes of drama and tenderness, mystery and joy, we close with music about endings that feel like beginnings. Nielsen's Fifth Symphony, written in the rubble of the First World War, chooses life with stubborn force. Sibelius's Seventh and final Symphony is a single unbroken movement — one of music's most condensed masterpieces, over in twenty minutes and impossible to shake. And Schubert's Unfinished Symphony, a reminder that incompleteness is its own kind of perfection. Go well. We will see you next season.", rep:[{composer:"Schubert",work:"Symphony No. 8 in B minor, 'Unfinished', D. 759"},{composer:"Sibelius",work:"Symphony No. 7 in C major, Op. 105"},{composer:"Nielsen",work:"Symphony No. 5, Op. 50"}] }
+  {
+    num:"I", theme:"drama", title:"Fire & Fate", date:"September 13 & 14, 2025",
+    img:"https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Lightning storm, dark clouds",
+    copy:"Every great season needs a blazing opening statement. Fire & Fate announces the year with works that share an irresistible forward momentum — music that feels, from its very first bar, like something inevitable unspooling. Beethoven's Coriolanus Overture crackles with conflict; Bartók's Concerto for Orchestra turns orchestral virtuosity into a kind of dramatic argument; and Brahms's First Symphony closes the evening with the hard-won arrival its four movements have been building toward all along. Bring your whole attention. The orchestra will do the same.",
+    rep:[{c:"Beethoven",w:"Coriolanus Overture, Op. 62"},{c:"Bartók",w:"Concerto for Orchestra, Sz. 116"},{c:"Brahms",w:"Symphony No. 1 in C minor, Op. 68"}]
+  },
+  {
+    num:"II", theme:"wonder", title:"New Worlds", date:"October 11 & 12, 2025",
+    img:"https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Vast open ocean horizon",
+    copy:"Music at its most expansive — reaching outward into the unknown, finding wonder in the vast and the unfamiliar. Dvořák composed his 'New World' Symphony in New York, hearing the American landscape through Bohemian eyes; the result is among the most universally beloved works in the repertoire. Paired with Samuel Barber's radiant Violin Concerto and the world-premiere of a new orchestral commission exploring migration and belonging, this programme asks what it means to arrive somewhere — and to call it home.",
+    rep:[{c:"Barber",w:"Violin Concerto, Op. 14"},{c:"Nakamura, Yuki",w:"Arrivals (World Premiere, MSO Commission)"},{c:"Dvořák",w:"Symphony No. 9 in E minor, 'From the New World', Op. 95"}]
+  },
+  {
+    num:"III", theme:"passion", title:"Love, Unreasonable", date:"November 8 & 9, 2025",
+    img:"https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Cherry blossom soft romance",
+    copy:"Wagner said that music expresses the inexpressible. These three works test that idea with some of the most emotionally overwhelming pages ever written. The Prelude to Tristan und Isolde distills centuries of longing into eighteen minutes of suspended desire. Ravel's La Valse transforms a ballroom into something hallucinatory, a dance of love and dissolution. At the centre of the evening, soprano Elena Voss joins the orchestra for Richard Strauss's Four Last Songs — four farewells so exquisite they make the air feel different. Come ready to feel too much.",
+    rep:[{c:"Wagner",w:"Prelude to Tristan und Isolde"},{c:"Ravel",w:"La Valse"},{c:"R. Strauss",w:"Vier letzte Lieder (Elena Voss, soprano)"}]
+  },
+  {
+    num:"IV", theme:"mystery", title:"The Hidden Order", date:"December 6 & 7, 2025",
+    img:"https://images.unsplash.com/photo-1448375240586-882707db888b?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Misty dark forest mystery",
+    copy:"Not all music announces itself. Some of the richest orchestral thinking is encoded — in patterns that reveal themselves slowly, in harmonic worlds that take time to navigate. This programme pairs three masters of musical architecture: Shostakovich, whose Tenth Symphony is a coded private language made public at last after Stalin's death; Ligeti, whose Chamber Concerto sounds like a mechanical universe quietly malfunctioning; and Schoenberg's Transfigured Night, here in its orchestral version, where tonality bends but never quite breaks.",
+    rep:[{c:"Schoenberg",w:"Verklärte Nacht, Op. 4 (orchestral version)"},{c:"Ligeti",w:"Chamber Concerto for 13 Instrumentalists"},{c:"Shostakovich",w:"Symphony No. 10 in E minor, Op. 93"}]
+  },
+  {
+    num:"V", theme:"light", title:"Midsummer & Gold", date:"January 17 & 18, 2026",
+    img:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Warm golden sunlight through trees",
+    copy:"A midwinter programme bathed in warmth. The orchestra turns to music that radiates — works that feel lit from within, rich and generous and unafraid of beauty. Mozart's Jupiter Symphony closes with a fugal finale that feels like standing in sudden sunshine. Mendelssohn's Violin Concerto — played here by the dazzling Isabela Costa — remains the finest single conversation between soloist and orchestra ever written. Between them, Respighi's The Pines of Rome conjures the Mediterranean in its full golden heat.",
+    rep:[{c:"Mendelssohn",w:"Violin Concerto in E minor, Op. 64 (Isabela Costa, violin)"},{c:"Respighi",w:"I Pini di Roma"},{c:"Mozart",w:"Symphony No. 41 in C major, 'Jupiter', K. 551"}]
+  },
+  {
+    num:"VI", theme:"journey", title:"The Long Way Round", date:"February 7 & 8, 2026",
+    img:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Winding mountain road ahead",
+    copy:"Some musical journeys cover enormous terrain. Mahler's Fifth Symphony is an odyssey — through grief and eruption, through one of the most famous adagios ever written, toward a finale that earns every note of its arrival. It is preceded by a shorter but no less meaningful voyage: Prokofiev's First Violin Concerto, an early work of unearthly lyricism, played by violinist Augustin Hadelich. A programme for evenings when you want music to take you somewhere far and bring you safely back.",
+    rep:[{c:"Prokofiev",w:"Violin Concerto No. 1 in D major, Op. 19 (Augustin Hadelich, violin)"},{c:"Mahler",w:"Symphony No. 5 in C-sharp minor"}]
+  },
+  {
+    num:"VII", theme:"nature", title:"Field, River, Storm", date:"February 28 & March 1, 2026",
+    img:"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Sunlit green forest lush nature",
+    copy:"Composers have always listened to the world outside. This programme gathers three orchestral landscapes — Sibelius's tone poem The Oceanides, shimmering with coastal light and maritime air; Smetana's Vltava, the great river-portrait in which we feel the current shift from mountain spring to broad, slow estuary; and Beethoven's Pastoral Symphony, perhaps the greatest musical depiction of the natural world ever committed to paper, from babbling brook to thunderstorm to shepherd's hymn of gratitude.",
+    rep:[{c:"Sibelius",w:"Aallottaret (The Oceanides), Op. 73"},{c:"Smetana",w:"Vltava from Má vlast"},{c:"Beethoven",w:"Symphony No. 6 in F major, 'Pastoral', Op. 68"}]
+  },
+  {
+    num:"VIII", theme:"memory", title:"Things Past", date:"March 21 & 22, 2026",
+    img:"https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Two hands reaching touching connection",
+    copy:"Memory and music are ancient companions. This programme moves between personal grief and historical elegy: Górecki's Symphony of Sorrowful Songs, with soprano Hanna Schwarz, circles a mother's lament across three centuries; Elgar's Cello Concerto — one of music's loneliest, most interior works — was written in the aftermath of the First World War; and Webern's Im Sommerwind floats with the particular lightness of a world that does not yet know what is coming. An evening of great beauty and great tenderness.",
+    rep:[{c:"Webern",w:"Im Sommerwind (In the Summer Wind)"},{c:"Elgar",w:"Cello Concerto in E minor, Op. 85 (Sheku Kanneh-Mason, cello)"},{c:"Górecki",w:"Symphony No. 3, 'Symphony of Sorrowful Songs' (Hanna Schwarz, soprano)"}]
+  },
+  {
+    num:"IX", theme:"drama", title:"Revolt & Rejoicing", date:"April 11 & 12, 2026",
+    img:"https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Lone figure facing storm defiance",
+    copy:"Music doesn't always reflect the world — sometimes it argues with it. This programme collects works born in political and personal extremity. Beethoven's Eroica Symphony rewrote what a symphony could mean; Shostakovich's Piano Concerto No. 2 is a work of almost camouflaged joy — written for his son during the repressive Soviet thaw. And Berlioz's Roman Carnival Overture is a pure explosion of carnival spirit, twelve minutes of orchestral exuberance that exists for no higher purpose than delight. Resistance takes many forms.",
+    rep:[{c:"Berlioz",w:"Le Carnaval romain, Op. 9"},{c:"Shostakovich",w:"Piano Concerto No. 2 in F major, Op. 102 (Yuja Wang, piano)"},{c:"Beethoven",w:"Symphony No. 3 in E-flat major, 'Eroica', Op. 55"}]
+  },
+  {
+    num:"X", theme:"wonder", title:"Music of the Spheres", date:"May 2 & 3, 2026",
+    img:"https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Night sky milky way stars cosmos",
+    copy:"Gustav Holst composed The Planets between 1914 and 1917, channelling the astrological character of each planet into a seven-movement suite of extraordinary variety and vision — from the grinding menace of Mars to the vast, wordless women's choir that closes Neptune in an apparent fade into infinity. This landmark work fills the second half. The first brings complementary cosmological thinking: Stravinsky's Symphony in Three Movements and a new commission from composer Jessie Montgomery.",
+    rep:[{c:"Stravinsky",w:"Symphony in Three Movements"},{c:"Montgomery, Jessie",w:"Celestial Mechanics (MSO Commission)"},{c:"Holst",w:"The Planets, Op. 32"}]
+  },
+  {
+    num:"XI", theme:"passion", title:"Burning Bright", date:"May 23 & 24, 2026",
+    img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Misty mountain peak ethereal dramatic",
+    copy:"Some music is made to be played at full intensity, without reserve. This programme selects three works that thrive on excess — lavish in orchestration, extravagant in expression, unapologetic about wanting to overwhelm. Tchaikovsky's Romeo and Juliet Fantasy-Overture is one of the greatest melodies ever written, set in a frame of operatic urgency. Rachmaninoff's Second Piano Concerto; soloist Beatrice Rana brings fresh fire to the most beloved concerto in the repertoire. And to close, Scriabin's Poem of Ecstasy — an orchestral vision so intense it seems to levitate.",
+    rep:[{c:"Tchaikovsky",w:"Romeo and Juliet Fantasy-Overture"},{c:"Rachmaninoff",w:"Piano Concerto No. 2 in C minor, Op. 18 (Beatrice Rana, piano)"},{c:"Scriabin",w:"The Poem of Ecstasy, Op. 54"}]
+  },
+  {
+    num:"XII", theme:"light", title:"The Last Word", date:"June 13 & 14, 2026",
+    img:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=180&h=180&fit=crop&crop=center",
+    imgAlt:"Calm ocean sunset golden farewell",
+    copy:"What do you play at the end of a year? After twelve programmes of drama and tenderness, mystery and joy, we close with music about endings that feel like beginnings. Nielsen's Fifth Symphony chooses life with stubborn force. Sibelius's Seventh and final Symphony is a single unbroken movement — one of music's most condensed masterpieces, over in twenty minutes and impossible to shake. And Schubert's Unfinished Symphony, a reminder that incompleteness is its own kind of perfection. Go well. We will see you next season.",
+    rep:[{c:"Schubert",w:"Symphony No. 8 in B minor, 'Unfinished', D. 759"},{c:"Sibelius",w:"Symphony No. 7 in C major, Op. 105"},{c:"Nielsen",w:"Symphony No. 5, Op. 50"}]
+  }
 ];
 
 function renderConcerts(filter) {
   const grid = document.getElementById('concertGrid');
   grid.innerHTML = '';
-  const filtered = filter === 'all' ? concerts : concerts.filter(c => c.theme === filter);
-  filtered.forEach((c, i) => {
+  const list = filter === 'all' ? concerts : concerts.filter(c => c.theme === filter);
+  list.forEach((c, i) => {
     const card = document.createElement('div');
     card.className = 'concert-card';
     card.dataset.id = i;
     card.innerHTML = `
       <div class="card-header" onclick="toggleCard(this)">
+        <div class="concert-image">
+          <img src="${c.img}" alt="${c.imgAlt}" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
         <div class="concert-number">${c.num}</div>
         <div class="card-content">
           <div class="theme-tag tag-${c.theme}">${c.theme}</div>
@@ -148,25 +218,22 @@ function renderConcerts(filter) {
         <div class="chevron" id="chev-${i}">&#9660;</div>
       </div>
       <div class="program-copy" id="copy-${i}">${c.copy}
-        <div class="repertoire open" id="rep-${i}">
-          ${c.rep.map(r => `<div class="rep-item"><span>${r.composer}</span>${r.work}</div>`).join('')}
+        <div class="repertoire">
+          ${c.rep.map(r=>`<div class="rep-item"><span>${r.c}</span>${r.w}</div>`).join('')}
         </div>
-      </div>
-    `;
+      </div>`;
     grid.appendChild(card);
   });
 }
 
 function toggleCard(header) {
   const card = header.closest('.concert-card');
-  const allCopies = document.querySelectorAll('.program-copy');
-  const allChevs = document.querySelectorAll('.chevron');
   const idx = card.dataset.id;
   const copy = document.getElementById('copy-' + idx);
   const chev = document.getElementById('chev-' + idx);
   const isOpen = copy.classList.contains('open');
-  allCopies.forEach(el => el.classList.remove('open'));
-  allChevs.forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.program-copy').forEach(el => el.classList.remove('open'));
+  document.querySelectorAll('.chevron').forEach(el => el.classList.remove('open'));
   if (!isOpen) { copy.classList.add('open'); chev.classList.add('open'); }
 }
 
